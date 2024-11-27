@@ -19,7 +19,7 @@ export function SobreALiga() {
                                 <h1 className="font-semibold text-4xl md:text-6xl text-white">Nossa missão</h1>
                                 <Separator className="border-1 bg-white w-[40%]"></Separator>
                             </div>
-                            <p className="text-white text-xl leading-relaxed font-semibold">
+                            <p className="text-white sm:text-xl leading-relaxed font-semibold">
                                 A Liga Desportiva LFA Ceará, fundada em abril de 2016, nasceu para elevar a qualidade dos eventos esportivos no estado, promovendo competições de Futsal com organização, seriedade e visibilidade. Desde 2019, filiada à Associação Brasileira de Ligas de Futsal, representa o Ceará em competições nacionais e regionais, como o Campeonato Brasileiro de Seleções de Ligas e a Liga Nordeste de Clubes. Reconhecida local e nacionalmente, a Liga foi premiada em 2018 e 2019 na Noite das Personalidades do Futsal, consolidando-se como referência em profissionalismo e estrutura na gestão do esporte.
                             </p>
                         </div>
