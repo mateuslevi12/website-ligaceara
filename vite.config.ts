@@ -10,11 +10,11 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3000, // Define a porta para ambiente de desenvolvimento (se necessário)
-    host: true, // Permite acesso via IP ou domínio
+    port: 3000,
+    host: true,
   },
   preview: {
-    port: 4173, // Porta padrão usada pelo `vite preview`
-    host: true, // Permite acesso externo no ambiente de produção
+    port: 8080, // Alterando para uma porta padrão mais comum
+    host: true, // Permite acesso externo
   },
 });
