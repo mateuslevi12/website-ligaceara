@@ -1,6 +1,7 @@
 import { DivMain } from "@/components/DivMain";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
+import { patrocinioImages } from "@/data/patrocinios";
 
 export function Home() {
 
@@ -20,21 +21,19 @@ export function Home() {
                     </section>
                 </DivMain>
                 <div className="  flex  gap-6 justify-center w-full ">
-                    <section className="flex sm:flex-row w-full items-center  gap-10 p-10  bg-[#3B3B3B] ">
+                    <section className="flex sm:flex-row w-full items-center  gap-10 p-10  bg-[#222222] ">
                         <div className="w-full flex flex-col items-center justify-center ">
                             <h2 className="text-white text-2xl">Nossos patrocinadores</h2>
                             <div className="flex flex-col items-center justify-center gap-6 ">
                                 {/* <p className="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p> */}
                                 <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-8 p-4">
-                                    <a href="#" className="text-white text-sm sm:text-base">Inicio</a>
-                                    <a href="#quem-somos" className="text-white text-sm sm:text-base">Quem somos</a>
-                                    <a href="#experiencia" className="text-white text-sm sm:text-base">Experiência</a>
-                                    <a href="#ultimos-trabalhos" className="text-white text-sm sm:text-base">Últimos trabalhos</a>
-                                    <a href="#servicos" className="text-white text-sm sm:text-base">Serviços</a>
-                                    <a href="#testemunhas" className="text-white text-sm sm:text-base">Testemunhas</a>
-                                    <a href="#solucoes" className="text-white text-sm sm:text-base">Soluções</a>
-                                    <a href="#precos" className="text-white text-sm sm:text-base">Preços</a>
-                                    <a href="#contato" className="text-white text-sm sm:text-base">Contato</a>
+                                    {
+                                        patrocinioImages.map(img => {
+                                            return (
+                                                 <img key={img} src={img} alt={img} />
+                                            )
+                                        })
+                                    }
                                 </div>
                             </div>
                         </div>
