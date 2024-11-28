@@ -1,7 +1,7 @@
 import { DivMain } from "@/components/DivMain";
 import { Header } from "@/components/Header";
+import { CarrosselMagicUi } from "@/components/Teste";
 import { Button } from "@/components/ui/button";
-import { patrocinioImages } from "@/data/patrocinios";
 
 export function Home() {
 
@@ -27,13 +27,8 @@ export function Home() {
                             <div className="flex flex-col items-center justify-center gap-6 ">
                                 {/* <p className="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p> */}
                                 <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-8 p-4">
-                                    {
-                                        patrocinioImages.map(img => {
-                                            return (
-                                                 <img key={img} src={img} alt={img} />
-                                            )
-                                        })
-                                    }
+                                    <CarrosselMagicUi/>
+                                    
                                 </div>
                             </div>
                         </div>
