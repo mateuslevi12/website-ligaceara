@@ -20,7 +20,7 @@ export function Header() {
                 </div>
 
                 <nav
-                    className={`${isMenuOpen ? "block" : "hidden"} absolute top-20 left-0 w-full sm:static ${
+                    className={`${isMenuOpen ? "block" : "hidden"} absolute z-10 top-20 left-0 w-full sm:static ${
                         isMenuOpen ? "bg-black p-4 shadow-xl" : ""
                     } sm:flex sm:items-center sm:gap-12 sm:w-auto`}
                 >
